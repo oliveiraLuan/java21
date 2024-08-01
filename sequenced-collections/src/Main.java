@@ -1,7 +1,4 @@
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.SequencedSet;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +21,16 @@ public class Main {
         System.out.println("Adicionado elemento na primeira posição: " + set);
         set.addLast("Quito");
         System.out.println("Adicionado elemento na última posição: " + set);
+
+        SequencedMap<Integer, String> europa = new LinkedHashMap<>();
+        europa.putFirst(1, "Paris");
+        europa.put(2, "Roma");
+        europa.putLast(3, "Berlim");
+
+        List<Double> lista = new ArrayList();
+        lista.addFirst(Math.PI);
+        System.out.println(europa);
+
+        System.out.println("VALOR DE PI = " + lista.getFirst());
     }
 }
