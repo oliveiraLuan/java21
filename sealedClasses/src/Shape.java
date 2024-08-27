@@ -1,2 +1,2 @@
-public sealed class Shape permits Circle, Square{
+public sealed class Shape permits Circle, Square, Rectangle{
 }
