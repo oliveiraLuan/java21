@@ -10,5 +10,9 @@ public class Demo {
         System.out.println("So".repeat(2));
         //Faz a identação com parâmetro n
         System.out.println("Format line".indent(4));
+
+        var content = "    Some text Here    ";
+        System.out.println(STR."All leading and trailing white space removed:\{content.strip()}");
+
     }
 }
